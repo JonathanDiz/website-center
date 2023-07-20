@@ -1,0 +1,26 @@
+/* Estilos generales del componente footer */
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer div {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

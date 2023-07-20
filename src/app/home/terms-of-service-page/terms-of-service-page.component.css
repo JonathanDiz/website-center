@@ -1,0 +1,8 @@
+/* Add any custom styles for the terms of service page here */
+
+h2 {
+  color: #fff;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}

@@ -1,0 +1,10 @@
+<nav>
+  <div class="menu-icon" (click)="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+  <ul [class.show]="showMenu">
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/tienda">Tienda</a></li>
+    <!-- Agrega más enlaces del Navbar según tus necesidades -->
+  </ul>
+</nav>
