@@ -6,13 +6,14 @@ import { LandingPageComponent } from '../app/home/landing-page/landing-page.comp
 import { ContactPageComponent } from '../app/home/contact-page/contact-page.component';
 import { ProductPageComponent } from '../app/home/product-page/product-page.component';
 import { TermsOfServicePageComponent } from '../app/home/terms-of-service-page/terms-of-service-page.component';
-
+import { ProductDetailsComponent } from './shop/product-details/product-details.component';
 @NgModule({
   declarations: [
     LandingPageComponent,
     ContactPageComponent,
     ProductPageComponent,
     TermsOfServicePageComponent,
+    ProductDetailsComponent,
   ],
   imports: [
     CommonModule,
@@ -23,6 +24,7 @@ import { TermsOfServicePageComponent } from '../app/home/terms-of-service-page/t
     ContactPageComponent,
     ProductPageComponent,
     TermsOfServicePageComponent,
+    ProductDetailsComponent,
   ],
 })
 export class MainModule {}

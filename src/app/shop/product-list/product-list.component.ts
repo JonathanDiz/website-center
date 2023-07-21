@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { tap, catchError } from 'rxjs/operators';
+import { ProductServiceComponent } from 'src/app/services/product-service/product-service.component';
 
 @Component({
   selector: 'app-product-list',
@@ -10,31 +9,11 @@ import { tap, catchError } from 'rxjs/operators';
 export class ProductListComponent implements OnInit {
   products: any[] = [];
 
-  constructor(private http: HttpClient) { }
+  constructor(private productService: ProductServiceComponent) { }
 
   ngOnInit(): void {
-    this.fetchProducts();
-  }
-
-  fetchProducts() {
-    const apiURL = 'https://foodapi.calorieking.com/v1/foods/search';
-
-    const params = {
-      term: 'foods',
-      locale: 'en_US',
-      maxResults: 10,
-    };
-
-    this.http.get<any[]>(apiURL, { params })
-      .pipe(
-        tap(data => {
-          this.products = data;
-        }),
-        catchError(error => {
-          console.log('Error fetching products:', error);
-          return []; // Puedes retornar un valor predeterminado o manejar el error de otra manera
-        })
-      )
-      .subscribe();
+    this.productService.getProducts().subscribe(products => {
+      this.products = products;
+    });
   }
 }
