@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './home/footer/footer.component';
 import { NavbarComponent } from './home/navbar/navbar.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './templates/home/home.component';
 
 @NgModule({
   declarations: [
