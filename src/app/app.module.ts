@@ -1,29 +1,38 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { MainModule } from '../app/main.module';
-
-import { HttpClientModule } from '@angular/common/http';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponent } from './home/footer/footer.component';
-import { NavbarComponent } from './home/navbar/navbar.component';
 import { HomeComponent } from './templates/home/home.component';
 
+// Importa los módulos de cada componente
+import { LandingPageModule } from './landing-page.module';
+import { ContactPageModule } from './contact-page.module';
+import { ProductPageModule } from './product-page.module';
+import { TermsOfServicePageModule } from './terms-of-service-page.module';
+import { CartModule } from './cart.module';
+import { ProductListModule } from './product-list.module';
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    FooterComponent,
-    NavbarComponent,
-    HomeComponent,
-  ],
+  declarations: [AppComponent, HomeComponent],
   imports: [
     BrowserModule,
-    MainModule,
-    AppRoutingModule,
-    HttpClientModule,
+    LandingPageModule,
+    ContactPageModule,
+    ProductPageModule,
+    TermsOfServicePageModule,
+    CartModule,
+    ProductListModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [
+    BrowserModule,
+    LandingPageModule,
+    ContactPageModule,
+    ProductPageModule,
+    TermsOfServicePageModule,
+    CartModule,
+    ProductListModule,
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }
