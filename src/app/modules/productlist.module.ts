@@ -1,7 +1,7 @@
 // productlist.module.ts
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProductListComponent } from './templates/shop/product-list/product-list.component';
+import { ProductListComponent } from '../templates/shop/product-list/product-list.component';
 
 @NgModule({
   declarations: [ProductListComponent],

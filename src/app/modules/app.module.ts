@@ -1,7 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
-import { HomeComponent } from './templates/home/home.component';
+import { AppComponent } from '../app.component';
+import { HomeComponent } from '../templates/home/home.component';
 
 // Importa los módulos de cada componente
 import { LandingPageModule } from './landing-page.module';

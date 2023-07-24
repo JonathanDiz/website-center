@@ -1,6 +1,6 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { ContactPageComponent } from "./templates/home/contact-page/contact-page.component";
+import { ContactPageComponent } from "../templates/home/contact-page/contact-page.component";
 
 @NgModule({
   declarations: [ContactPageComponent],
