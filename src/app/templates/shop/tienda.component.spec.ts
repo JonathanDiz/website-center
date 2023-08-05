@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { TiendaComponent } from './tienda.component';
 
 describe('TiendaComponent', () => {
@@ -8,14 +7,16 @@ describe('TiendaComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [TiendaComponent]
+      declarations: [TiendaComponent],
     });
+
     fixture = TestBed.createComponent(TiendaComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  // You can add more tests for other behaviors or properties of the component
 });

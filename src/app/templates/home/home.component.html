@@ -1,10 +1,10 @@
-<p>home works!</p>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <title>My Angular Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <base href="/">
 </head>
 
@@ -12,30 +12,26 @@
   <!-- Navbar -->
   <header>
     <nav>
+      <ul>
         <li><app-navbar></app-navbar></li>
+      </ul>
     </nav>
   </header>
 
   <!-- Main content -->
-  <div>
+  <main>
     <!-- Landing Page Component -->
     <app-landing-page></app-landing-page>
-  </div>
 
-  <!-- Contact Page Component -->
-  <section>
+    <!-- Contact Page Component -->
     <app-contact-page></app-contact-page>
-  </section>
 
-  <!-- Product Page Component -->
-  <section>
+    <!-- Product Page Component -->
     <app-product-page></app-product-page>
-  </section>
 
-  <!-- Terms of Service Page Component -->
-  <section>
+    <!-- Terms of Service Page Component -->
     <app-terms-of-service-page></app-terms-of-service-page>
-  </section>
+  </main>
 
   <!-- Footer -->
   <footer>
