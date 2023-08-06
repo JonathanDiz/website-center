@@ -5,18 +5,22 @@ describe('TiendaComponent', () => {
   let component: TiendaComponent;
   let fixture: ComponentFixture<TiendaComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       declarations: [TiendaComponent],
-    });
+    })
+    .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(TiendaComponent);
     component = fixture.componentInstance;
+    fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
   });
 
-  // You can add more tests for other behaviors or properties of the component
+  // Add more tests for other behaviors or properties of the component
 });
